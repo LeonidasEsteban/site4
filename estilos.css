@@ -1,0 +1,244 @@
+@charset "utf-8";
+/* CSS Document */
+article{
+	background:black;
+	display:inline-block;
+	height:200px;
+	padding:10px;
+	vertical-align:top;
+	width:200px;
+	margin-top:10px;
+	overflow:hidden;
+	position:relative;
+	transition:0.5s;
+	}
+body{
+	background: rgb(252,241,161); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(252,241,161,1) 0%, rgba(239,196,55,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,241,161,1)), color-stop(100%,rgba(239,196,55,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(252,241,161,1) 0%,rgba(239,196,55,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(252,241,161,1) 0%,rgba(239,196,55,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(252,241,161,1) 0%,rgba(239,196,55,1) 100%); /* IE10+ */
+	background: linear-gradient(top,  rgba(252,241,161,1) 0%,rgba(239,196,55,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf1a1', endColorstr='#efc437',GradientType=0 ); /* IE6-9 */
+
+
+	font-family: 'Quicksand', sans-serif;
+	font-size:16px;
+	margin:0;
+	text-align:center;
+	}
+footer, header, section{
+	background:#FFFFCC;
+	background:rgba(255,255,204,0.7);
+	display:block;
+	margin:0 auto;
+	width:90%;
+	
+	}
+h1, h2, h3, h4, h5, h6, p, img{margin:0;}
+header{
+	border-left:5px solid #F90;
+	border-radius:1.5em 0px;
+	border-right:5px solid #F90;
+	height:200px;
+	margin-top:10px;
+	}
+header h1{
+	font-family: 'Aclonica', sans-serif;
+	
+	}
+header h2 strong a{
+	color:#3366FF;
+	text-decoration:none;
+	transition:0.3s;
+	}
+header h2 strong a:hover{
+	color:#0099FF;
+	}
+header p{
+	
+	}
+img{transition:0.5s;}
+section{
+	background:url("trans-paper.png");
+	border-bottom:5px solid #F90;
+	border-radius:0px 1.5em ;
+	border-top:5px solid #F90;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding-bottom:10px;
+	}
+#contHeader{
+	padding:5%;
+	
+	}
+	/*************hover1**********/
+#hover1{
+	transition:2s;
+	}
+	
+#hover1:hover{
+	border-radius:50%;
+	transform:rotate(-360deg);
+	}
+#hover1 img{
+	
+	}
+#hover1:hover img{
+	border-radius:50%;
+	box-shadow:0px 0px 150px white;
+	
+	transform:rotate(360deg) scale(0.8,0.8);
+	
+	}
+	
+	/***************hover3************/
+#hover2 .container img{transition:0.5s;}
+#hover2 .container:hover img{
+	transform:rotate(180deg);
+	
+	}
+/*************hover3**********/
+
+#hover3 img{
+	
+	}
+#hover3:hover img{
+	border-radius:50%;
+	box-shadow:0px 0px 150px white;
+	
+	transform:rotate(360deg) scale(0.8,0.8);
+	
+	}
+/*********************hover4*********************/
+
+#hover4 img{
+	
+	position:relative;
+	transition:0.5s;
+	}
+#hover4:hover img{
+	transform:translate(0px,-1020px);
+	}
+/*********************hover5*********************/
+
+#hover5 .container2{width:1020px;}
+#hover5 img{
+	
+
+	display:inline;
+	
+	}
+#hover5:hover img{
+	transform:translate(-820px, 0px);
+	
+}
+	/***************hover6************/
+
+#hover6{
+	display:block;
+	height:300px;
+	margin:10px auto;
+	position:relative;
+	transition:2s;
+	}
+#hover6 .container{
+	background:url("panoramica.jpg")no-repeat center top;
+	height:300px;
+	transition:2s;
+	}
+#hover6:hover{
+	width:1000px;
+	}	
+#hover6:hover .container{
+	width:1000px;
+	}
+	
+/****************hover7****************/
+#hover7 .descripcion{
+	height:100px;
+	margin:50px 50px;
+	padding:0;
+	transform:rotate(10deg);
+	transition-delay:0.5s;
+	transition-duration:0.5s;
+	width:100px;
+	}
+#hover7:hover .descripcion{
+	
+	background:rgba(255,255,255,0.5);
+	background:url("troll.jpg");
+	height:200px;
+	margin:0;
+	opacity:1;
+	transform:rotate(360deg);
+	width:200px;
+	}
+#hover7 .descripcion h3{
+	opacity:0;
+	transition-delay:1s;
+	transition-duration:0.5s;
+	}
+#hover7:hover .descripcion h3{
+	color:black;
+	font-size:2em;
+	margin-top:150px;
+	opacity:1;
+	}
+#hover7:hover img{
+	opacity:0;
+	transform:scale(0.5,0.5) rotate(100deg);
+	}
+
+/**********hover8************/
+
+#hover8:hover img{
+	transform:scale(1.2,1.2);
+	
+	}
+#hover8:hover .descripcion{
+	opacity:1;
+	}
+#hover8 .descripcion:hover{
+	transition-delay:0s;
+	transform:translate(100px,-100px)
+	}
+/****************hover9*****************/
+
+#hover9:hover img{
+	animation:0.5s troll infinite ease-in;
+	}
+@keyframes troll{
+	0%{margin-top:-10px;}
+	50%{margin-top:20px;}
+	100%{margin-top:-5px;}
+	
+	}
+#hover9:hover .descripcion {
+	background:none;
+	font-size:2.2em;
+	opacity:1;
+	}
+.container{
+	width:200px;
+	height:200px;
+	overflow:hidden;
+	
+	}
+	
+	
+
+.descripcion{
+	background:rgba(0,0,0,0.5);
+	bottom:10px;
+	color:white;
+	padding:5px;
+	position:absolute;
+	opacity:0;
+	transition-delay:0.5s;
+	transition-duration:0.5s;
+	}
+	
+
+	
